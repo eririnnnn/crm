@@ -111,8 +111,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     //add
     new WorkboxPlugin.GenerateSW({
       cacheId: 'crm',
-      globalDirectory: config.build.assetsRoot,
-      globalPatterns: ['**/*.{js,html,css,png}'],
+      globDirectory: config.build.assetsRoot,
+      globPatterns: ['**/*.{js,html,css,png}'],
       swDest: path.join(config.build.assetsRoot,'service-worker.js'),
       skipWaiting:true,
       clientsClaim:true,
